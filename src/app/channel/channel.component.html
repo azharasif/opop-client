@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="ok"> </div>
+
+
+
+
+
+    <div class="container">
+
+        <form method="POST" (ngSubmit)="settings()">
+            <button type="submit" class="btn btn-primary row col-md-offset-6" style="padding-right:50px">User Settings</button>
+        </form>
+
+        <div *ngFor="let video of videos" class="card" style="width:503px;  height: 469px">
+
+
+            <p id="txt">{{ video.tags }}</p>
+
+            <p>{{ video.rating }}</p>
+            <video width="500" height="410" controls>
+    <!-- <source src="{{ video.path }}" type="video/webm"> -->
+    <source src="{{ video.path }}" type="video/webm">
+    
+    Your browser does not support the video tag.
+  </video>
+        </div>
+
+    </div>
+    <div class="ok"> </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

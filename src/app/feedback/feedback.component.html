@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="ok"></div>
+
+    <div class="container">
+
+        <p>CONTACT US</p>
+
+        <div class="contact-us">
+            <form id="feedback" method="POST" (ngSubmit)="feedback()" ngNativeValidate>
+                <!------------------- First Div ------------------>
+                <div class="subject">
+                    <input type="text" class="input" name="Name" [(ngModel)]="feedbackData.feedback_name" pattern="^\D*$" placeholder="Your Name" required>
+                </div>
+                <!------------------- SECOND Div ------------------>
+
+                <!-- <div class="row"> -->
+                <div class="msg">
+                    <textarea class="area" id="subject" name="comment" placeholder="Write something.." style="height:200px" [(ngModel)]="feedbackData.comments" required></textarea>
+
+                    <!-- <label for="comment">Comment</label> -->
+                    <!-- </div> -->
+                </div>
+
+                <!------------------- BUTTON Div ------------------>
+                <button id="feedback-button" type="submit" class="btn ">Send</button> {{message}}
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="ok"></div>
+
+
+
+</body>
+
+</html>

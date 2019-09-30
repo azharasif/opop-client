@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <div class="ok"></div>
+
+    <div id="container">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="">&times;</span>
+            <i class="fa fa-user-circle-o" style="font-size:100px;color:#26A69A"></i>
+        </div>
+        <form class="form-inline" id="setting-form" method="POST" (ngSubmit)="edit()">
+
+            <!-- FIrst_NAME_DIV -->
+
+            <div class="login">
+                <!-- <label for="">First Name:</label> -->
+                <input type="text" placeholder="First Name" name="firstname" [(ngModel)]="user.first_name ">
+            </div>
+
+            <!-- SECOND_NAME_DIV -->
+            <!-- <label for="">Last Name:</label> -->
+            <div class="subject">
+                <input type="text" placeholder="Last Name" name="lastname" [(ngModel)]="user.last_name ">
+            </div>
+
+
+            <!-- Email_DIV -->
+
+            <!-- <label for="">E-mail:</label> -->
+            <div class="subject">
+                <input type="text" placeholder="Email" name="email" [(ngModel)]="user.email">
+            </div>
+
+            <!-- Cell-no -->
+
+            <!-- <label for="">Cell Number:</label> -->
+            <div class="subject">
+                <input type="text" placeholder="Phone Number" name="cell" [(ngModel)]="user.number">
+            </div>
+
+            <!-- Button -->
+
+            <button id="button" type="submit">Update</button>
+
+
+
+            <p *ngIf="buttonClicked; then firstBtn"></p>
+
+            <!--........... CHANGE PASSWORD ....... -->
+            <button id="button" type="submit">Change Password</button>
+            <!--........... FORM ....... -->
+            <form id="oldPass" method="POST" (ngSubmit)="comparePass()">
+                <!--........... OLD PASSWORD ....... -->
+                <!-- <label for="">Enter Old Password:</label> -->
+                <input type="text" placeholder="ENTER OLD PASSWORD" name="oldPass" [(ngModel)]="changePass.pass">
+                <!------------------- CHECK BUTTON--------------------->
+                <button id="button" type="submit">Check</button>
+            </form>
+
+            <ng-template #firstBtn>
+                <p *ngIf="passCheck; then first else second "></p>
+                <ng-template #first>
+                    <form id="changePass" method="POST" (ngSubmit)="edit(1)  " ngNativeValidate>
+                        <div class="row col-md-offset-3">
+                            <div class="form-group col-md-6">
+                                <label for="">Passward:</label>
+                                <input type="text" class="form-control" name="password" [(ngModel)]="user.pass">
+                            </div>
+                        </div>
+                        <button id="button" type="submit" class="btn btn-primary row col-md-offset-6" style="padding-right:50px">Update</button>
+                    </form>
+                </ng-template>
+                <ng-template #second>
+                    <p>Incorret Passward</p>
+                </ng-template>
+            </ng-template>
+
+
+
+        </form>
+    </div>
+
+    <div class="ok"></div>
+
+
+
+
+
+</body>
+
+</html>

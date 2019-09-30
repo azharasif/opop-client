@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="nav-wrapper">
+            <a id="logo" href="feed" class="brand-logo">Hot Hash Tags </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                <li *ngIf=" logedin()"><a href="feed">Feed</a></li>
+                <li *ngIf=" logedin()"><a href="channel/settings">Channel Settings</a></li>
+                <li *ngIf=" logedin()"><a href="channel">My Channel</a></li>
+                <li *ngIf=" logedin()"><a href="feedback">Feedback</a></li>
+                <li *ngIf=" logedin()"><a href="video/add">Create Video</a></li>
+                <!-- <li *ngIf=" logedin()"><a href="#">Trends</a></li> -->
+                <li id="logout" *ngIf=" logedin()"><a (click)="logout()">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="ok"></div>
+
+    <div class="container id01">
+        <form method="POST" (ngSubmit)="create()">
+
+            <div class="container ido2">
+                <div class="">
+
+                    <input type="text" class="form-control" name="channel-name" [(ngModel)]="channel.channel_name " required>
+                </div>
+
+                <div class="">
+                    <button type="submit" class="" style="padding-right:50px">Create Channel</button>
+                </div>
+
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+    <div class="ok"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+// .row{
+//     margin: auto;
+//     width: 50%;
+//     border: 3px solid green;
+//     padding: 10px;
+// }
+
+// #videoElement{
+//     margin: auto;
+//     width: 50%;
+    
+//     border: 3px solid green;
+//     padding: 10px;
+// }
+//Colours
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+
+body{
+  background: -webkit-linear-gradient(to top, #16222A , #3A6073); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #16222A , #3A6073);
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  
+  }
+    
+
+
+.video {
+    box-shadow: 1px 6px 10px 2px rgba(35, 35, 35, 0.62);
+    height: 430px;
+    max-height: 600px;
+    width: 600px;
+    border: 10;
+  
+  }
+  
+ 
+
+
+.wrapper{
+  margin-top: 80px;
+  margin-bottom: 100px;
+
+}
+
+
+.ok{
+
+  height: 25px;
+}
+  
+
+  // #video-style{
+  //   border:2px solid blue;
+  //   padding:5px;
+  //   /**Or add your own style**/
+  //   }
+
+
+  // ...........input...........//
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    color: white;
+    border-radius: 2px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 0px; /* Add a top margin */
+    margin-bottom: 15px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+}
+
+
+//......... Buttons.......//
+#button-style{
+
+  margin-top: 0;
+
+}
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  color: $red;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 5px;
+ // padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 25px 30px 25px 25px;
+  
+
+ 
+}
+
+#rec{
+  // width: 75px;
+ //	height: 35px;
+   
+   border: 2px solid #2bbbad;
+   color: white;
+   margin-left: 0;
+
+  // font-weight: bold;
+  // background-color:#44bd32;
+ //	border: 0;
+ //	border-radius: 35px;
+ //	margin: 18px;
+ //	outline: none;
+ &:hover,
+ &:focus {
+   color: #fff;
+   outline: 0;
+   background-color: #2bbbad;
+ }
+ }
+ 
+ #stop{
+  border: 2px solid $red;
+  // background-color:#c23616;
+ //	border: 0;
+ //	border-radius: 35px;
+  
+ //	outline: none;
+ &:hover,
+ &:focus {
+   color: #fff;
+   outline: 0;
+   background: #e74c3c;
+ }
+ }
+ 
+ #down{
+  
+  // font-size: 50;
+  // font-weight: bold;
+  // background-color:#273c75;
+ //	border: 0;
+ //	border-radius: 35px;
+ border: 2px solid grey;
+   //outline: none;
+   &:hover,
+   &:focus {
+     color: #fff;
+     outline: 0;
+     background: grey;
+   }
+ }
+
+
+//.....................................................//
+//  ...................................................//
+//......................MEDIA--qURIES-----------------------//
+//.......................................................//
+//......................................................//
+ @media  screen and (max-width: 600px) {
+  .video {
+    box-shadow: 1px 6px 10px 2px rgba(35, 35, 35, 0.62);
+    height: 300px;
+    max-height: 600px;
+    width: 100%;
+    border: 10;
+  
+  }
+  .btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    color: $red;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    
+   // padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 25px 30px 25px 25px;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 3px;
+    
+  
+   
+  }
+  input[type=text], select, textarea {
+    margin-bottom: 15px; /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+}
+.wrapper{
+  margin-top: 80px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+}
+
+

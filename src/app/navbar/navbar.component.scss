@@ -1,0 +1,50 @@
+// ................LOGOUT.........................
+#logout {
+    background-color: black;
+}
+
+.nav-wrapper {
+    background-color: black;
+    // height: 85px;
+}
+
+//...................... LOGO SETTINGS........................
+#logo {
+    float: left;
+    background: black;
+}
+
+//.................... Nav postion Div.........................
+nav {
+    position: fixed;
+    z-index: 5;
+}
+
+li {
+    transition: 0.5s ease;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    background: #26a69a;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a :hover {
+    border-top: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+// ---------------------- MObile version -----------------------//
+@media screen and (max-width: 600px) {
+    .nav-wrapper {
+        background-color: black;
+        // height: 85px;
+    }
+}

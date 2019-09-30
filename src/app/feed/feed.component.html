@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+
+</head>
+
+
+
+<body>
+    <!-- DIV OF CONTAINER -->
+
+    <!-- Flex-COntainer -->
+
+    <!--  Form-Containing-Button -->
+
+
+
+
+
+
+
+
+
+    <!-- Section - of button and search box -->
+
+
+    <!-- <div class="container">
+    <section class="First-Section">
+
+
+
+      <div class="button ficed">
+        <form method="POST" (ngSubmit)="mychannel()">
+          <!-- button -->
+    <!-- <button type="submit" class="btn btn-primary top " style="padding-right:50px">My Channel</button>
+
+        </form>
+      </div>
+    </section>
+  </div> -->-->
+
+    <!-- FORM-END -->
+
+    <div class=" myclass">
+
+        <div class="searchbox">
+            <form class="" method="GET" (ngSubmit)="search()">
+
+
+                <!--end of col-->
+
+                <input type="text" name="SearchData.search" [(ngModel)]="SearchData.search" placeholder="#Seach_Trend">
+
+                <!--end of col-->
+
+                <!-- <button type="submit" class="btn btn-primary row col-md-offset-6" style="padding-right:50px" >search Trend</button> -->
+
+                <button type="submit" class="btn btn-primary" class="btn btn-lg btn-success" type="submit"><i
+            class="fas  fa-search h4 text-body"></i></button>
+
+
+                <!--end of col-->
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <div id="trend-b">
+
+        <div class="your-trends-b Trend-1-b trens-2-b"><strong>
+        <h5> Trends for you </h5>
+      </strong> </div>
+
+        <!-- trends divs containing content -->
+        <div *ngFor="let trendd of trends" class="Trend-1-b">
+            <p>
+                <strong> {{trendd}} </strong>
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Secton of  button and search end here -->
+
+
+
+
+    <!-- Extra Div -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form method="GET" (ngSubmit)="search()">
+      <input  type="text"  class="form-control" name="SearchData.search" [(ngModel)]="SearchData.search">	
+
+    <button type="submit" class="btn btn-primary row col-md-offset-6" style="padding-right:50px" >search Trend</button>
+
+</form> -->
+
+
+
+    <!-- Div containing both trend and video -->
+
+    <!-- searched div -->
+
+    <div class="div4"></div>
+
+
+
+
+
+
+    <div id="bottomdiv"></div>
+    <!-- Advertismen Div starter -->
+    <div class="advertisment">
+
+
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide slide-1">
+                <a style="text-decoration: none" href="https://tgb.qq.com/en/games/pubg.html">
+                    <h1 class="pubg">Pubg</h1>
+                </a>
+
+            </div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide slide-2">
+                <a style="text-decoration: none;margin-bottom: 200px;" href="https://www.jazz.com.pk/">
+                    <h1 class="pubg">Pubg</h1>
+                </a>
+            </div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide slide-3">
+                <a style="text-decoration: none" href="https://www.jazz.com.pk/">
+                    <h1 class="pubg">Pubg</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-------------------- video styling-------------- -->
+    <div id="styling">
+
+
+        <!-- --------------------- Video -Div---------------------->
+        <div id="video-style  ">
+            <div *ngIf="vidio">
+                <div *ngFor="let video of videos" class="card" style="width:503px;  height: 469px">
+
+
+                    <p id="txt">{{ video.tags }}</p>
+
+                    <p>{{ video.rating }}</p>
+                    <video width="500" height="410" controls>
+            <!-- <source src="{{ video.path }}" type="video/webm"> -->
+            <source src="{{ video.path }}" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container-1">
+        <div *ngIf="searched">
+            <div *ngFor="let video of searching" class="card vid-trend ">
+                <div>
+                    <p>{{ video.tags }}</p>
+                </div>
+                <p>{{ video.rating }}</p>
+                <video width="320" height="240" controls>
+      <!-- <source src="{{ video.path }}" type="video/webm"> -->
+      <source src="{{ video.path }}" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- DIV OF Flex END -->
+
+    <!-- DIV OF CONTAINER END -->
+
+
+</body>
+
+
+</html>

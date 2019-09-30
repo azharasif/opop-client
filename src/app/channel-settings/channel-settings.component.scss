@@ -1,0 +1,130 @@
+body {
+    background: #222222;
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #16222A, #3A6073);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #16222A, #3A6073);
+}
+
+#setting-form {
+    width: 100%;
+    padding: 10px;
+}
+
+#button {
+    width: 100%;
+    background: #486255;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: #26a69a;
+}
+
+.ok {
+    height: 25px;
+}
+
+#container {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 600px;
+    height: 900px;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(72, 98, 85, 0.6);
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login .input {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .input:last-child {
+    margin-right: 0;
+}
+
+.input,
+.msg .area {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eaea;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    transform: all 0.5s ease;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input:focus,
+.msg .area:focus {
+    border: 2px solid #26a69a;
+    outline: none;
+}
+
+//............ button-- settings........ //
+// .button {
+//     background-color: #4CAF50;
+//     border: none;
+//     color: white;
+//     padding: 15px 32px;
+//     text-align: center;
+//     text-decoration: none;
+//     display: inline-block;
+//     font-size: 16px;
+//     margin: 4px 2px;
+//     cursor: pointer;
+// }
+input:focus,
+.msg .area:focus {
+    border: 2px solid #26a69a;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'roboto';
+}

@@ -1,0 +1,77 @@
+<!-- 
+
+<div class="row">
+  <button (click)="toggleControls()" class="btn btn-success">Toggle Controls</button>
+  <button (click)="pause()" class="btn btn-warning">Pause</button>
+  <button (click)="resume()" class="btn btn-info">Resume</button>
+  <button (click)="sound()" class="btn btn-danger">Play with Sound</button>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="text-center">
+      <h3>
+        <video #videoElement id="videoElement"></video>
+      </h3>
+    </div>
+  </div>
+</div>
+<div>
+  <button (click)="play()" class="btn btn-danger">Play</button>
+  <video #playVideoElement></video>
+
+</div>
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="ok"></div>
+
+
+    <div class="wrapper ">
+
+
+        <!-- video div -->
+        <div class="video">
+            <video #video class="video"></video>
+        </div>
+        <form class="form-group" #f=ngForm [formGroup]="videoForm">
+            <input type="text" class="form-control" name="Name" [(ngModel)]="feedbackData.feedback_name" formControlName="data" required>
+
+            <!-- Buttons div -->
+            <div id="button-style">
+
+                <button md-raised-button class=" btn" id="rec" [disabled]="!f.valid" (click)="startRecording()"> Record </button>
+                <button md-raised-button class=" btn" id="stop" (click)="stopRecording()"> Stop</button>
+                <button md-raised-button class=" btn" id="down" (click)="download()"> Save</button>
+            </div>
+        </form>
+
+
+
+
+    </div>
+
+    <div class="ok"></div>
+
+
+
+
+
+
+
+</body>
+
+</html>
